@@ -18,10 +18,12 @@ const LoanForm = () => {
     let interest = 0;
     if (loanPayment <= loanOverdue) {
       const diffDays = Math.ceil((loanPayment.getTime() - new Date('2025-01-01').getTime()) / (1000 * 3600 * 24));
-      interest = (outstandingPrincipal * 0.02 * diffDays) / 360;
+      interest = (disbursementAmount * 0.02 * diffDays) / 360;
+      console.log(diffDays)
     } else {
       const diffDays = Math.ceil((loanPayment.getTime() - new Date('2025-01-01').getTime()) / (1000 * 3600 * 24));
-      interest = (disbursementAmount * 0.02 * diffDays) / 360;
+      interest = (outstandingPrincipal * 0.02 * diffDays) / 360;
+      console.log(diffDays)
     }
 
     // Round the interest amount to 2 decimal places
