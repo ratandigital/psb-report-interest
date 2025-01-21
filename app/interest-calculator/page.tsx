@@ -157,15 +157,13 @@ const LoanForm = () => {
           Calculate
         </button>
 
-        {isCalculated && (
-          <button
-            onClick={generateVoucher}
-            className="w-full mt-4 p-2 bg-green-500 text-white rounded hover:bg-green-600"
-          >
-            Generate Voucher
-          </button>
+       
+  {extraInterestAmount !== null && (
+          <div className="mt-4">
+            <strong>Extra Interest Amount: </strong>
+            {extraInterestAmount.toFixed(0)}
+          </div>
         )}
-
      
       </div>
     </>
