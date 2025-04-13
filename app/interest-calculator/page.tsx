@@ -76,7 +76,7 @@ const LoanForm = () => {
   return (
     <>
       <div>
-        <h2 className="text-center mt-8 text-2xl md:text-3xl font-semibold">Extra Interest Calculator</h2>
+        <h2 className="text-center mt-8 text-2xl md:text-3xl font-semibold">Additional Interest Calculator</h2>
       </div>
       <div className="max-w-lg mx-auto p-6 border border-gray-300 rounded-lg shadow-lg">
         {/* Member Name */}
